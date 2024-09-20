@@ -42,44 +42,35 @@ The project consists of the following main components:
 - Damage calculation based on hero attributes and equipment
 - Custom exceptions for invalid equipment operations
 
-## How to Use
+## Requirements
 
-1. Create a hero:
-   ```csharp
-   Hero hero = new Warrior("Aragon");
-   ```
+To build and run this project, you'll need one of the following development environments:
 
-2. Generate items:
-   ```csharp
-   List<Item> items = ItemGenerator.GenerateItems();
-   ```
+### Option 1: Visual Studio Code
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
 
-3. Equip items to the hero:
-   ```csharp
-   try
-   {
-       hero.Equip(weapon);
-       hero.Equip(armor);
-   }
-   catch (InvalidWeaponException e)
-   {
-       Console.WriteLine(e.Message);
-   }
-   catch (InvalidArmorException e)
-   {
-       Console.WriteLine(e.Message);
-   }
-   ```
+### Option 2: Visual Studio (Windows)
+Choose one of the following versions:
 
-4. Level up the hero:
-   ```csharp
-   hero.LevelUp();
-   ```
+**Visual Studio Community 2022**
+- Free for individual developers, open source projects, academic research, education, and small professional teams.
+- [Download Visual Studio Community](https://visualstudio.microsoft.com/vs/community/)
 
-5. Display hero information:
-   ```csharp
-   Console.WriteLine(hero.Display());
-   ```
+**Visual Studio Professional 2022**
+- For professional developers and small teams.
+- [Download Visual Studio Professional](https://visualstudio.microsoft.com/vs/professional/)
+
+**Visual Studio Enterprise 2022**
+- For enterprise-scale development and testing.
+- [Download Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/enterprise/)
+
+Ensure that you have the ".NET Desktop Development" workload installed with your Visual Studio installation.
+
+### Additional Requirements
+- .NET 6.0 SDK (included in Visual Studio 2022 installations)
+
+Make sure to select the appropriate version based on your needs and licensing requirements. All versions will be capable of building and running this project.
 
 ## Demo
 
@@ -90,14 +81,6 @@ EquipItemsDemo.Run();
 ```
 
 This will create a hero, generate items, attempt to equip them, level up the hero, and display the hero's state at various points.
-
-## Extending the Project
-
-To add new features or modify existing ones:
-
-1. To add a new hero class, create a new class that inherits from `Hero` and implement the abstract methods.
-2. To add new item types, extend the `Item` class and update the `ItemGenerator` class.
-3. To modify hero attributes or leveling mechanics, update the relevant hero classes.
 
 ## Contributing
 
