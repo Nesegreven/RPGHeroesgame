@@ -105,5 +105,5 @@ Contributions to improve RPG Heroes are welcome. Please feel free to submit pull
 
 ## License
 
-[Specify your license here, e.g., MIT License, GPL, etc.]
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
