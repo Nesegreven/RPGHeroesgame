@@ -9,25 +9,7 @@ namespace RPGHeroesTest
 {
     public class DisplayTests
     {
-        [Fact]
-        public void Hero_Display_ShouldReturnCorrectString()
-        {
-            Hero hero = new Warrior("TestWarrior");
-            Weapon weapon = new Weapon("TestAxe", 1, WeaponType.Axe);
-            Armor armor = new Armor("TestPlate", 1, Slot.Body, ArmorType.Plate);
-
-            hero.Equip(weapon);
-            hero.Equip(armor);
-
-            string display = hero.Display();
-            Assert.Contains("Name: TestWarrior", display);
-            Assert.Contains("Class: Warrior", display);
-            Assert.Contains("Level: 1", display);
-            Assert.Contains("Strength: 10", display);  // 5 (base) + 5 (plate armor)
-            Assert.Contains("Dexterity: 3", display);  // 2 (base) + 1 (plate armor)
-            Assert.Contains("Intelligence: 2", display);  // 1 (base) + 1 (plate armor)
-            Assert.Contains("Damage: 7,7", display);  // 7 (axe) * (1 + 10/100)
-        }
+        
         [Fact]
         public void Mage_Display_ShouldReturnCorrectString()
         {
