@@ -72,7 +72,24 @@ Ensure that you have the ".NET Desktop Development" workload installed with your
 
 Make sure to select the appropriate version based on your needs and licensing requirements. All versions will be capable of building and running this project.
 
+## Unit Tests
+
+This project includes a comprehensive suite of unit tests to ensure the correct functionality of all components. The tests are written using xUnit, a popular testing framework for .NET applications.
+
+### Test Coverage
+
+Our unit tests cover the following areas:
+
+1. Hero Creation: Verifies that heroes are created with correct initial attributes.
+2. Level Up Mechanics: Ensures that hero attributes increase correctly when leveling up.
+3. Equipment System: Tests equipping and unequipping weapons and armor, including invalid scenarios.
+4. Attribute Calculations: Checks that total attributes are calculated correctly with various equipment combinations.
+5. Damage Calculations: Verifies that hero damage is calculated correctly based on attributes and equipment.
+6. Display Functionality: Ensures that the hero's display string contains all necessary information.
+
 ## Demo
+
+The project is primarily meant to be "run" by using the test to ensure functionality. However there a demo is provided which will display potential usage and console output
 
 The `EquipItemsDemo` class provides a demonstration of the system's functionality. You can run it from the `Main` method in the `Program` class:
 
